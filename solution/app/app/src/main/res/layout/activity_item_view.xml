@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/load_in_gray"
+    tools:context=".ItemViewActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/load_in_gray"
+        tools:ignore="MissingConstraints">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:minHeight="?attr/actionBarSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@android:color/white"
+            android:background="?attr/colorPrimary"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/loadinLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/loadin_logo"
+                android:layout_gravity="left">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/BoxViewTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="24sp"
+                android:textColor="@color/white"
+                android:gravity="center">
+            </TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+        <TableLayout
+            android:id="@+id/item_table"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:background="@color/load_in_gray"
+            android:stretchColumns="1">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/item_description_header"
+                    android:background="@drawable/cell_shape"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/item_description_value"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/item_boxID_header"
+                    android:background="@drawable/cell_shape"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/item_boxID_value"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/item_dimensions_header"
+                    android:background="@drawable/cell_shape"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/item_dimensions_value"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/item_weight_header"
+                    android:background="@drawable/cell_shape"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/item_weight_value"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/item_fragility_header"
+                    android:background="@drawable/cell_shape"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/item_fragility_value"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/item_room_header"
+                    android:background="@drawable/cell_shape"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/item_room_value"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/item_list_header"
+                    android:background="@drawable/cell_shape"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/item_list_value"
+                    android:background="@drawable/cell_shape"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:background="@drawable/cell_shape"
+                    android:clickable="true"
+                    android:onClick="editInventory"
+                    android:padding="3dip"
+                    android:text="Edit Item"
+                    android:textColor="@color/load_in_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:id="@+id/AddItemText"
+                    android:background="@drawable/cell_shape"
+                    android:clickable="true"
+                    android:gravity="right"
+                    android:onClick="addItem"
+                    android:padding="3dip"
+                    android:text="Add Item"
+                    android:textColor="@color/load_in_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:visibility="invisible"
+                    android:id="@+id/ViewExpertTipsText"
+                    android:background="@drawable/cell_shape"
+                    android:clickable="true"
+                    android:onClick="viewExpertTips"
+                    android:padding="3dip"
+                    android:text="Loading Tips"
+                    android:textColor="@color/load_in_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </TableRow>
+
+
+
+
+        </TableLayout>
+
+
+        <Button
+            android:id="@+id/deleteItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="150dp"
+            android:text="Delete Item"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/AddItemText" />
+
+        <Button
+            android:id="@+id/FindBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="150dp"
+            android:text="Find Box"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/AddItemText" />
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

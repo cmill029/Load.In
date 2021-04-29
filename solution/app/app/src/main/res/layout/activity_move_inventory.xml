@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/load_in_gray"
+    tools:context=".MoveInventoryActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/topbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:minHeight="?attr/actionBarSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:titleTextColor="@android:color/white"
+                android:background="?attr/colorPrimary"
+                android:orientation="vertical"
+                tools:ignore="MissingConstraints">
+
+                <ImageView
+                    android:id="@+id/loadinLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/loadin_logo"
+                    android:layout_gravity="left">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_activity_move_inventory"
+                    android:textSize="24sp"
+                    android:textColor="@color/white"
+                    android:gravity="center">
+                </TextView>
+            </androidx.appcompat.widget.Toolbar>
+
+        </LinearLayout>
+        <EditText
+            android:id="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:hint="Enter box description"
+            android:inputType="textShortMessage"
+            android:background="@color/white"
+            android:textColor="@color/load_in_green"
+            />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/item_name_header"
+
+                    android:layout_width="140dp"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+
+                    android:layout_marginTop="5dp"
+                    android:text="Name"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/load_in_green" />
+
+                <TextView
+                    android:id="@+id/item_boxID_header"
+                    android:layout_width="100dp"
+
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/item_name_header"
+                    android:text="Room"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/load_in_green" />
+
+                <TextView
+                    android:id="@+id/item_room_header"
+                    android:layout_width="100dp"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/item_boxID_header"
+                    android:text="Status"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/load_in_green" />
+
+                <TextView
+                    android:id="@+id/item_status_header"
+                    android:layout_width="60dp"
+                    android:gravity="center"
+                    android:textAlignment="gravity"
+
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/item_room_header"
+                    android:text="Box ID"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="@color/load_in_green" />
+            </TableRow>
+
+        </TableLayout>
+
+        <ListView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/InventoryListView">
+
+
+        </ListView>
+    </LinearLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TipsAndTricksActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleTextColor="@android:color/white"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/loadinLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:src="@drawable/loadin_logo"
+            android:layout_gravity="left">
+        </ImageView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_activity_tips_and_tricks"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:gravity="center">
+        </TextView>    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/articleSearchTool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="130dp"
+            android:layout_marginBottom="12dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Enter a keyword to search"
+            android:inputType="textShortMessage"
+            app:layout_constraintBottom_toTopOf="@+id/articleTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/searchForArticle"
+            android:layout_width="150dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="0dp"
+            android:text="Search"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/articleTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:backgroundTint="@color/white"
+            android:selectAllOnFocus="true"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/load_in_green"
+            android:layout_below="@id/articleSearchTool"
+            android:text="" />
+
+        <com.google.android.exoplayer2.ui.PlayerView
+            android:id="@+id/articleVideo"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@id/articleTitle"
+            android:visibility="invisible"
+            app:layout_constraintDimensionRatio="4:3"
+            />
+<!--
+        <VideoView
+            android:id="@+id/articleVideo"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            app:layout_constraintDimensionRatio="4:3"
+            android:layout_below="@id/articleTitle"
+            android:visibility="invisible"/>
+-->
+        <ImageView
+            android:id="@+id/articleImage"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_below="@id/articleTitle"
+            android:visibility="invisible"/>
+
+
+        <TextView
+            android:id="@+id/articleContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="0dp"
+            android:backgroundTint="@color/white"
+            android:selectAllOnFocus="true"
+            android:textSize="24sp"
+            android:textColor="@color/load_in_green"
+            android:layout_below="@id/articleVideo"
+            android:text=""/>
+
+        <ListView
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/searchForArticle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ExpertListView"
+            android:background="@color/load_in_gray"
+            android:visibility="invisible">
+
+
+        </ListView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

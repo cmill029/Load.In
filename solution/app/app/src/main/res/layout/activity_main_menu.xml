@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/load_in_gray"
+    tools:context=".MainMenuActivity"
+    tools:deviceIds="wear">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+        <!-- Layout for content is here. This can be a RelativeLayout  -->
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:orientation="vertical"
+            app:titleTextColor="@android:color/white"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/loadinLogo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:adjustViewBounds="true"
+                android:src="@drawable/loadin_logo"></ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/title_activity_main_menu"
+                android:textColor="@color/white"
+                android:textSize="24sp"></TextView>
+        </androidx.appcompat.widget.Toolbar>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/ll1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/tips_and_tricks_button"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:text="Tips And Tricks"
+                android:layout_weight="1">
+            </Button>>
+
+            <Button
+                android:id="@+id/goto_move_inventory_button"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="left"
+                android:text="Inventory"
+                android:layout_weight="1">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/move_inventory_button"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="left"
+                android:text="Add New Box"
+                android:layout_weight="1">
+            </Button>
+
+            <Button
+                android:id="@+id/logistics_button"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="left"
+                android:text="Logistics"
+                android:layout_weight="1">
+            </Button>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/load_plan_navigator_no_color_button"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="left"
+                android:text="Load Plan"
+                android:layout_weight="1">
+            </Button>
+
+            <Button
+                android:id="@+id/load_plan_navigator_with_color_button"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="left"
+                android:text="Load Plan Color Coded"
+                android:layout_weight="1">
+            </Button>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/feedback_button"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="left"
+                android:text="Feedback"
+                android:layout_weight="1">
+            </Button>
+
+            <Button
+                android:id="@+id/goto_test_harness_button"
+                android:layout_width="0dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_gravity="left"
+                android:text="Test Harness"
+                android:layout_weight="1">
+            </Button>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/goto_login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_gravity="bottom"
+            android:text="Logout" >
+        </Button>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

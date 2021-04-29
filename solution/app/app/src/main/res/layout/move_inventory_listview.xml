@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="1">
+<TableRow>
+        <TextView
+            android:id="@+id/item_name_value"
+            android:layout_width="140dp"
+            android:text="name"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textColor="@color/load_in_green"
+            />
+
+        <TextView
+            android:id="@+id/item_room_value"
+            android:layout_width="100dp"
+            android:text="room"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textColor="@color/load_in_green"
+            />
+
+        <TextView
+            android:id="@+id/item_status_value"
+            android:layout_width="100dp"
+            android:text="status"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:textColor="@color/load_in_green"
+            />
+
+        <TextView
+            android:id="@+id/item_boxID_value"
+            android:layout_width="60dp"
+            android:gravity="center"
+            android:textAlignment="gravity"
+            android:text="boxID"
+            android:textColor="@color/load_in_green"
+            />
+
+    </TableRow>
+    <TableRow>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_span="4"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_contents_header"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
+                android:padding="3dip"
+                android:text="Contents:"
+
+                android:textColor="@color/load_in_green" />
+
+            <TextView
+                android:id="@+id/item_contents_value"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|left"
+                android:padding="3dip"
+                android:text="Contents:"
+
+                android:textColor="@color/load_in_green" />
+
+        </LinearLayout>
+
+
+
+
+
+    </TableRow>
+</TableLayout>
