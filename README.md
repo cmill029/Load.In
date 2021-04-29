@@ -5,4 +5,6 @@ to load a rental truck. There are a few features that the app would have given m
 from images rather than directly input dimenions.
 
 The Android app files are contained within the "app" directory, the "database" directory contains the files for our SQL database that the app uses for data
-management, and the "webapi" directory is exactly that, a webapi that works as an inbetween for our application and our database.
+management, and the "webapi" directory is exactly that, a webapi that works as an inbetween for our application and our database. The "common" directory is
+a location that contains the majority of the classes used throughout the application and webapi, for example the class for our inventory system is located
+there.
